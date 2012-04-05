@@ -1,0 +1,20 @@
+<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand" href="http://www.abdyasin.com">
+				Ceramah Ustaz Abd. Yasin
+			</a>
+			<ul class="nav">
+				<% if @nav == "index" %>
+					<li class = "active"><%= link_to 'Video Ceramah', root_path %></li>
+			  		<li><%= link_to 'Kelebihan melanggan', langgan_path %></li>
+					<li><a href="http://www.abdyasin.com/category/blog">Blog Ustaz</a></li>
+				<% elsif @nav == "langgan"%>
+					<li><%= link_to 'Video Ceramah', root_path %></li>
+			  		<li class = "active"><%= link_to 'Kelebihan melanggan', langgan_path %></li>
+					<li><a href="http://www.abdyasin.com/category/blog">Blog Ustaz</a></li>
+				<% end%>
+			</ul>
+		</div>
+	</div>
+</nav>

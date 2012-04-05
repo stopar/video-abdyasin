@@ -1,9 +1,0 @@
-/* 
-Will not be using Sprockets to load all the SCSS files. Better of using the import command 
-'@import' as such to load individiual CSS files
-
-Step for loading custom variable CSS:
-1. To override Twitter Bootstrap variables, those attributes must be declared first. 
-2. Import bootstrap
-3. Import base or custom SCSS file OR write the SCSS code after importing.   
-*/

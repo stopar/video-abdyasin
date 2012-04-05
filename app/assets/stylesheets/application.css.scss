@@ -1,0 +1,26 @@
+/* 
+Will not be using Sprockets to load all the SCSS files. Better of using the import command 
+'@import' as such to load individiual CSS files
+
+Steps for loading custom variable CSS:
+1. All initialize of styles - includes Bootstrap, custom variables - grid columns, width,background color,
+   will be in the _base.scss file
+2. Application.csss will contain all the custom CSS that is needed for a particular page. 
+
+See the _base.scss for more
+*/
+
+@import "base";
+
+/* Page specific styles 
+*/
+section {
+
+	h1{	margin: 20px 0; }
+	
+	#free_videos{
+		margin-top: 20px;
+		border-bottom:1px dashed #999;
+	}
+
+}

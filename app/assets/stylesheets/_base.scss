@@ -1,0 +1,21 @@
+/* 
+This is the base file for configuration of all custom variables, frameworks, grid. 
+
+It is important to initialize all custom variables before calling Bootstrap. 
+
+Once done then call the bootstrap. 
+*/
+
+// Initialize style that will overide any default values
+
+$baseFontSize: 14px;
+
+// Importing necessary framework
+// @import "compass/reset";
+@import "compass/css3";
+@import "bootstrap";
+
+// Custom styles for 
+body{
+	margin-top: 40px;
+}
