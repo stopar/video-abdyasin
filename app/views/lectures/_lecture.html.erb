@@ -1,0 +1,17 @@
+<div class="videos">
+	<ul class = "thumbnails">
+		<li class="span3">
+			<%= link_to image_tag(lecture.poster_url(:thumb)), lecture_path(lecture), :class => "thumbnail" %>
+			<h4><%= lecture.title %></h4>
+			<p><%= lecture.recorded_at.strftime('%d hb %b %Y') %></p>
+			<div class="btn-group">
+				<%= link_to "Papar", lecture_path(lecture), :class => "btn btn-small" %>
+				<%= link_to "Ubah", edit_lecture_path(lecture), :class => "btn btn-small" %>
+				<%= link_to "Padam", lecture_path(lecture), 
+					:method => :delete, 
+					:confirm => "Pasti anda mahu padam ceramah #{lecture.title}?",
+					:class => "btn btn-small btn-danger" %>
+			</div>
+		</li>
+	</ul>
+</div>

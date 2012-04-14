@@ -5,15 +5,9 @@
 				Ceramah Ustaz Abd. Yasin
 			</a>
 			<ul class="nav">
-				<% if @nav == "index" %>
-					<li class = "active"><%= link_to 'Video Ceramah', root_path %></li>
-			  		<li><%= link_to 'Kelebihan melanggan', langgan_path %></li>
-					<li><a href="http://www.abdyasin.com/category/blog">Blog Ustaz</a></li>
-				<% elsif @nav == "langgan"%>
-					<li><%= link_to 'Video Ceramah', root_path %></li>
-			  		<li class = "active"><%= link_to 'Kelebihan melanggan', langgan_path %></li>
-					<li><a href="http://www.abdyasin.com/category/blog">Blog Ustaz</a></li>
-				<% end%>
+				<li class="<%= "active" if @nav == "list" %>"><%= link_to 'Video Ceramah', root_path %></li>
+				<li class="<%= "active" if @nav == "langgan"%>"><%= link_to 'Kelebihan melanggan', langgan_path %></li>
+				<li><a href="http://www.abdyasin.com/category/blog">Blog Ustaz</a></li>
 			</ul>
 		</div>
 	</div>

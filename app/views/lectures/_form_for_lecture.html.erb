@@ -1,0 +1,23 @@
+<div id ="lecture_form">
+	<%= simple_form_for(@lecture, :html => {:class => 'form-horizontal', :multiplart => true}) do |l| %>
+		<%= l.error_notification %>
+		<%= l.input :title, :label => 'Tajuk ceramah', 
+			:input_html => {:placeholder => 'Al-Araf 1-9'} %>
+		
+		<%= l.input :video_name, :label => 'Nama video', 
+			:hint => 'Tidak perlu masukan file extension (.webm, mp4, ogv)', 
+		 	:input_html => {:placeholder => 'HDKS1'} %>
+	
+		<%= l.input :recorded_at,   :label => 'Dirakamkan pada', 
+		 							:start_year => Date.today.year - 3, :end_year => Date.today.year, 
+		 							:order => [:day, :month, :year] %>
+		
+		<%= l.input :poster, :label => 'Poster ceramah', :as => :file %>
+	
+		<%= l.input :note, :class => 'note', :input_html => {:rows => '25'} %>
+	
+		<%= l.submit 'Simpan', :class => 'offset2 btn btn-large btn-primary' %>
+		<%= link_to "Kembali", lectures_path, :class => 'btn btn-large'%>
+	
+	<% end %>
+</div>

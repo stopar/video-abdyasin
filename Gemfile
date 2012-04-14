@@ -1,8 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.0'
-gem 'sorcery'                     # For creating user authentication
-
+gem 'jquery-rails'
+gem 'sorcery'                   # For creating user authentication
+gem 'carrierwave'               # For Ceramah Poster image file uploads. 
+gem 'fog'                       # To support uploads to Rackspace Cloud Files
+                                # Works in conjunction with Carrierwave
+gem 'rmagick'                   # To handle image manipulation when uploading video posters
+gem 'simple_form'               # Easier generating forms                                
+gem 'redcarpet'                 # Use for writing Markdown text to HTML
+                                
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -20,8 +27,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 group :development do 
     gem 'rspec-rails'

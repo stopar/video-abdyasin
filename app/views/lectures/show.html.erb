@@ -1,0 +1,29 @@
+<div id="lecture">
+	
+	<%= video_tag [	"http://s3-ap-southeast-1.amazonaws.com/ustazvideos/#{@lecture.video_name}.mp4",
+					"http://s3-ap-southeast-1.amazonaws.com/ustazvideos/#{@lecture.video_name}.ogv",
+	                "http://s3-ap-southeast-1.amazonaws.com/ustazvideos/#{@lecture.video_name}.webm"
+	                 ], 
+	            :class => "sublime", 
+	            :width => 640, :height => 360,
+			    :preload => "none",
+	            :poster => @lecture.poster_url %>
+
+	<div class="alert alert-block span10 tip">
+		<a class="close" data-dismiss="alert">×</a>
+	  	<h4 class="alert-heading">Sudah klik butang play, tapi video masih belum bermain?</h4> 
+		Secara 'default' video akan dimainkan dalam HTML5 player. Namun sekiranya terlalu lama menunggu, 
+		klik-kanan pada video di atas untuk tukar ke Flash Player. Opsyen ini hanya boleh dilakukan di atas komputer 
+		dan komputer riba sahaja. 
+	</div>	
+	
+	<div class="clearfix"></div>
+	<div class="note">	
+		<h1 class="title"><%= @lecture.title %></h1>
+
+		<p>Ceramah dirakam pada <%= @lecture.recorded_at.strftime('%d hb %b %Y') %></p>
+		<br/>
+		<%= render_text(@lecture.note) %>
+	</div>
+	
+</div>

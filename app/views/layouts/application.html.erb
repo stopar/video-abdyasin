@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang ="en">
 <head>
-  <title>Dr. Abdullah Yasin - Video Ceramah</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <script type="text/javascript" src="http://cdn.sublimevideo.net/js/aa8czafz.js"></script>
-
+  <title><%= @title %></title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= javascript_include_tag "http://cdn.sublimevideo.net/js/aa8czafz.js" %>
 </head>
 <body>
 

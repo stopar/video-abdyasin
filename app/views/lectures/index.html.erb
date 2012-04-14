@@ -1,0 +1,32 @@
+<div id="moderator_actions">
+	<div class="row-fluid">
+		<div class="span9">
+			<h1>Assalamualaikum moderator</h1>
+		</div>
+		
+		<div class="span3 upload_btn">
+				<%= link_to "Upload ceramah baru", new_lecture_path, 
+					:class => "btn btn-large btn-primary" %>
+		</div>
+		
+		<div class="span10">
+			<% if flash[:success] %>
+		     <p class="alert alert-success"><%= flash[:success] %></p>
+		    <% end %>
+	
+		    <% if flash[:error] %>
+		      <p class="alert alert-error"><%= flash[:error] %></p>
+		    <% end %>
+		</div>
+		
+	</div>
+</div>
+
+<%= render @lectures %>
+
+
+
+
+
+
+

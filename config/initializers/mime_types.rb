@@ -5,4 +5,10 @@
 # Mime::Type.register_alias "text/html", :iphone
 
 # register MIME type with Rails
-Mime::Type.register "video/m4v", :m4v
+Rack::Mime::MIME_TYPES.merge!({
+  ".ogv"     => "video/ogg",
+  ".webm"    => "video/webm",
+  ".mp4"     => "video/mp4",
+  ".m4v"     => "video/mp4",
+  ".mp3"     => "audio/mpeg",
+})

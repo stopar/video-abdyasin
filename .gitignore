@@ -16,3 +16,6 @@
 
 # Ignore sass-cache
 /.sass-cache
+
+# Ignoring cache uploads by CarrierWave
+/public/uploads

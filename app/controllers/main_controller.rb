@@ -4,6 +4,10 @@ def index
   @nav = "index"
 end
 
+def list
+  @nav = "list"
+end
+
 def langgan
   @nav = "langgan"
 end

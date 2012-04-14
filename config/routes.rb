@@ -1,12 +1,12 @@
 Ustaz::Application.routes.draw do
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   get "kelebihan_melanggan" => "main#langgan", :as => "langgan"
-
-  # For temporary static routing
-  match '/video1', :to => 'main#video1'
   
+  resources :lectures, :path => "/ceramah"
+    
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -54,7 +54,7 @@ Ustaz::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => 'main#index'
+  root :to => 'lectures#index'
 
   # See how all your routes lay out with "rake routes"
 
