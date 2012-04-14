@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.0'
 gem 'jquery-rails'
+gem 'bcrypt-ruby', '~> 3.0.0'   # For creating simple moderator authentication
+
 gem 'sorcery'                   # For creating user authentication
 gem 'carrierwave'               # For Ceramah Poster image file uploads. 
 gem 'fog'                       # To support uploads to Rackspace Cloud Files
@@ -36,9 +38,6 @@ end
 group :production do 
   gem 'pg'
 end
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

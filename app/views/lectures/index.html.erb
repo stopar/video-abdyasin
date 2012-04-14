@@ -1,28 +1,42 @@
-<div id="moderator_actions">
-	<div class="row-fluid">
-		<div class="span9">
-			<h1>Assalamualaikum moderator</h1>
-		</div>
+<% if current_moderator %>
+
+	<div id="moderator_actions">
+		<div class="row-fluid">
+			<div class="span9">
+				<h1>Laman moderator</h1>
+			</div>
 		
-		<div class="span3 upload_btn">
-				<%= link_to "Upload ceramah baru", new_lecture_path, 
-					:class => "btn btn-large btn-primary" %>
-		</div>
+			<div class="span3 upload_btn">
+					<%= link_to "Upload ceramah baru", new_lecture_path, 
+						:class => "btn btn-large btn-primary" %>
+			</div>
 		
-		<div class="span10">
-			<% if flash[:success] %>
-		     <p class="alert alert-success"><%= flash[:success] %></p>
-		    <% end %>
+			<% if flash.any? %>
+				<div class="span10 alert <%= "alert-success" if flash[:success] %>
+										 <%= "alert-error" if flash[:error] %>">
+					<a class="close" data-dismiss="alert">×</a>
+					<% if flash[:success] %>
+					    <%= flash[:success] %>
+				    <% end %>
 	
-		    <% if flash[:error] %>
-		      <p class="alert alert-error"><%= flash[:error] %></p>
-		    <% end %>
-		</div>
+				    <% if flash[:error] %>
+						<%= flash[:error] %>
+				    <% end %>
+				</div>
+			<% end %>
 		
+		</div>
 	</div>
+	
+<% end %>	
+
+<div id="lectures_thumbnails">
+	<ul class = "thumbnails">
+		<%= render @lectures %>
+	</ul>
 </div>
 
-<%= render @lectures %>
+
 
 
 

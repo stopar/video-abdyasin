@@ -23,7 +23,11 @@
 
 		<p>Ceramah dirakam pada <%= @lecture.recorded_at.strftime('%d hb %b %Y') %></p>
 		<br/>
-		<%= render_text(@lecture.note) %>
+		
+		<div id="markdown_text">
+			<%= render_text(@lecture.note) %>			
+		</div>
+
 	</div>
-	
+
 </div>

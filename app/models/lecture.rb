@@ -13,13 +13,10 @@ class Lecture < ActiveRecord::Base
     permalink
   end
   
-  def video_url
-    [ 
-    ]
-  end
   
   private
   
+  # Takes the title and stores a permalink to it
   def set_permalink
     self.permalink = title.downcase.gsub(/[^0-9a-z]+/,' ').strip.gsub(' ','-') if title
   end

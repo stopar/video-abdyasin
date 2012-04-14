@@ -1,0 +1,10 @@
+<%= simple_form_for(@moderator, :html => {:class => 'form-horizontal'}) do |m| %>
+	<%= m.error_notification %>
+	<%= m.input :email, :label => 'Emel moderator', 
+		:input_html => {:placeholder => 'ali@gmail.com'} %>
+
+	<%= m.input :password, :label => 'Kata laluan' %>
+	<%= m.input :password_confirmation, :label => 'Ulangi kata laluan' %>
+	<%= m.submit 'Simpan', :class => 'offset3 btn btn-large btn-primary' %>
+
+<% end %>

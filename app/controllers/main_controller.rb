@@ -1,19 +1,11 @@
 class MainController < ApplicationController
 
 def index
-  @nav = "index"
-end
-
-def list
-  @nav = "list"
+  @lectures = Lecture.order('recorded_at ASC')
 end
 
 def langgan
   @nav = "langgan"
-end
-
-def video1
-  @nav = "index"
 end
 
 end

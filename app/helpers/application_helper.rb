@@ -6,7 +6,8 @@ module ApplicationHelper
                 
     markdown = Redcarpet::Markdown.new(renderer, 
                 :no_intra_emphasis => true, 
-                :space_after_headers => true)
+                :space_after_headers => true, 
+                :superscript => true)
                 
     markdown.render(text).html_safe
   end

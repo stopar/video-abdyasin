@@ -15,3 +15,4 @@
 //
 // Loads all Bootstrap Javascript
 //= require bootstrap-alert
+//= require bootstrap-dropdown.js

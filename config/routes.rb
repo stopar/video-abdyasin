@@ -1,11 +1,23 @@
 Ustaz::Application.routes.draw do
+
+  root :to => "lectures#index"
   
+  resources :lectures, :path => "/ceramah"   # This changes the path from
+                                             # x.com/lectures/lecture-title to
+                                             # x.com/ceramah/lecture-title
+                                            
+  # Static and special routes                                            
+  get "kelebihan_melanggan" => "main#langgan", :as => "tentang"
+  get "daftar" => "moderators#new", :as => "signup"
+  get "masuk" => "sessions#new", :as => "signin"
+  get "keluar" => "sessions#destroy", :as => "signout"
+
+  resources :moderators
+  resources :sessions
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
-
-  get "kelebihan_melanggan" => "main#langgan", :as => "langgan"
-  
-  resources :lectures, :path => "/ceramah"
     
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
@@ -54,7 +66,7 @@ Ustaz::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => 'lectures#index'
+
 
   # See how all your routes lay out with "rake routes"
 
