@@ -14,8 +14,19 @@ $baseFontSize: 14px;
 // @import "compass/reset";
 @import "compass/css3";
 @import "bootstrap";
+@import "compass/layout/sticky-footer";
 
-// Custom styles for 
+// Custom styles for entire app. 
+// Put all global wide settings or initializers here
+
+@include sticky-footer(60px, "#layout","layout-footer","footer"); 
+
+#layout{
+	margin-bottom: 30px; 	// Change this to half of sticky-footer value
+}
+
 body{
 	margin-top: 40px;
 }
+
+

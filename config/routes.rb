@@ -1,16 +1,18 @@
 Ustaz::Application.routes.draw do
 
-  root :to => "lectures#index"
+  root :to => "main#index"
   
   resources :lectures, :path => "/ceramah"   # This changes the path from
                                              # x.com/lectures/lecture-title to
                                              # x.com/ceramah/lecture-title
                                             
-  # Static and special routes                                            
-  get "kelebihan_melanggan" => "main#langgan", :as => "tentang"
-  get "daftar" => "moderators#new", :as => "signup"
-  get "masuk" => "sessions#new", :as => "signin"
-  get "keluar" => "sessions#destroy", :as => "signout"
+  # Static and special routes
+  get "sumbangan"     => "main#donations",    :as => "donations"                                         
+  get "maklumbalas"   => "main#feedback",     :as => "feedback"
+  get "tenang_laman"  => "main#about",        :as => "about"
+  get "daftar"        => "moderators#new",    :as => "signup"
+  get "masuk"         => "sessions#new",      :as => "signin"
+  get "keluar"        => "sessions#destroy",  :as => "signout"
 
   resources :moderators
   resources :sessions

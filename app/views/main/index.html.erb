@@ -1,0 +1,26 @@
+<div id="main_index">
+	
+
+	<div class="hero-unit">
+		<h1>Kami perlu bantuan anda</h1>
+		<p>Sekiranya anda suka pada ceramah-ceramah Ustaz dan mahu ianya berterusan, kami 
+		   memerlukan sumbangan anda untuk mengendalikan ceramah-ceramah dan laman ini. 
+		</p>
+		<p>	<%= link_to "Ketahui caranya", donations_path, 
+					:class => "btn btn-primary btn-large" %>
+		</p>
+	</div>
+
+	<div class="page-header">
+		<h1>Ceramah-ceramah Ustaz
+			<small>Siri video untuk jemaah Ummatan Wasata</small>
+		</h1>	
+	</div>
+
+	<div id="lectures_thumbnails">
+		<ul class = "thumbnails">
+			<%= render @lectures %>
+		</ul>
+	</div>
+	
+</div>

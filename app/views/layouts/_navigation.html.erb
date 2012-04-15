@@ -1,23 +1,26 @@
 <nav class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
-			<a class="brand" href="http://www.abdyasin.com">
-				Ceramah Ustaz Abd. Yasin
-			</a>
+			<%= link_to "Dr. Abdullah Yasin", root_url, :class => "brand" %>
+
 			<ul class="nav">
 				<li class="<%= "active" if @nav == "list" %>">
 					<%= link_to "Video Ceramah", lectures_path %></li>
 					
-				<li class="<%= "active" if @nav == "langgan"%>">
-					<%= link_to "Tentang", tentang_path %></li>
+				<li><a href="http://www.abdyasin.com/category/blog">Blog</a></li>
 					
-				<li><a href="http://www.abdyasin.com/category/blog">Blog Ustaz</a></li>
+				<li class="<%= "active" if @nav == "about"%>">
+					<%= link_to "Tentang", about_path %></li>
+				
+				<li	class="<%= "active" if @nav == "feedback"%>">
+						<%= link_to "Maklumbalas", feedback_path %></li>
 			</ul>
 			
 			<ul class="nav pull-right">
 				<% if current_moderator %>
 					<li class="dropdown" id="menu1">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+						  <i class="icon-user icon-white"></i>
 					      <%= current_moderator.email %>
 					      <b class="caret"></b>
 					    </a>
@@ -31,7 +34,7 @@
 					</li>
 				<% else %>
 					<li class="<%= "active" if @nav == "moderator_masuk" %>">
-						<%= link_to "Moderator masuk", signin_path %></li>
+						<%= link_to "Untuk moderator", signin_path %></li>
 				<% end %>
 			</ul>
 			

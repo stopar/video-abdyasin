@@ -12,10 +12,11 @@ See the _base.scss for more
 
 @import "base";
 @import "lectures";
+@import "main";
 
 /* Page specific styles 
 */
-section {
+#layout {
 
 	h1{	margin: 20px 0; }
 	
@@ -27,5 +28,8 @@ section {
 	li.span3 h4{
 		margin-top: 5px;
 	}
+}
 
+#footer{
+	padding-bottom: 30px;
 }

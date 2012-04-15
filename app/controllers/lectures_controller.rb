@@ -3,7 +3,7 @@ class LecturesController < ApplicationController
   before_filter :title_for_moderator, :except => :show
   
   def index
-    @title = "Dr. Abdullah Yasin - Video Ceramah"
+    @title = "Senarai video-video ceramah"
     @lectures = Lecture.order('recorded_at ASC')
   end
   
