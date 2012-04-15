@@ -1,7 +1,6 @@
 class AddDefaultModerator < ActiveRecord::Migration
-  def up
-  end
 
-  def down
-  end
+  # Create default user
+  Moderator.create!(:email => 'mus@home.com', :password => 'password', 
+                    :password_confirmation => 'password')
 end
