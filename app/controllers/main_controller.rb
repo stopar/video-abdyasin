@@ -1,7 +1,7 @@
 class MainController < ApplicationController
 
 def index
-  @lectures = Lecture.order('recorded_at ASC')
+  @lectures = Lecture.limit(12).order('recorded_at DESC')
   @title = "Dr. Abdullah Yasin video-video ceramah"
 end
 

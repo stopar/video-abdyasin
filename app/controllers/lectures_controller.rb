@@ -4,7 +4,7 @@ class LecturesController < ApplicationController
   
   def index
     @title = "Senarai video-video ceramah"
-    @lectures = Lecture.order('recorded_at ASC')
+    @lectures = Lecture.order('recorded_at DESC')
   end
   
   def new
