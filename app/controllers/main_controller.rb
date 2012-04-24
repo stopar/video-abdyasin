@@ -14,6 +14,10 @@ def donations
   @title = "Cara-cara menyumbang"
 end
 
+def moderator
+  @title = "Ingin menjadi moderator?"
+end
+
 def feedback
   @nav = "feedback"
   @title = "Maklumbalas"

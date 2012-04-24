@@ -10,6 +10,7 @@ Ustaz::Application.routes.draw do
   get "sumbangan"     => "main#donations",    :as => "donations"                                         
   get "maklumbalas"   => "main#feedback",     :as => "feedback"
   get "tenang_laman"  => "main#about",        :as => "about"
+  get "jadi_moderator"=> "main#moderator",    :as => "moderator"
   get "daftar"        => "moderators#new",    :as => "signup"
   get "masuk"         => "sessions#new",      :as => "signin"
   get "keluar"        => "sessions#destroy",  :as => "signout"

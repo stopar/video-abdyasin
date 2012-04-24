@@ -23,21 +23,39 @@
 }
 
 #lecture{
-	
 	margin-top: 30px;
-	h1.title{
-		line-height: 5px;
+	
+	#lecture_main {
+		margin-left: 0;
+		
+		#sublime_video_wrapper_0{
+			border:1px solid #404040;
+			/*@include box-shadow(#545454 3px 3px 5px 3px);		*/
+		}
+		
+		h1.title{
+			line-height: 5px;
+		}
+		
+		#markdown_text {			
+			h1{
+				text-align: center;
+			}			
+		}
+		
+		.tip{
+			margin-top: 20px;		
+		}
+		
+		.note{
+			margin-top: 30px;
+			background-color: #fafafa;
+			padding: 15px;		
+		}
 	}
 	
-	#markdown_text h1{
-		text-align: center;
+	#sidebar_promo{
+		margin-top: 0;
 	}
-	
-	.tip{
-		margin-top: 20px;		
-	}
-	
-	.note{
-		margin-top: 20px;
-	}
+		
 }

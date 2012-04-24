@@ -4,10 +4,14 @@
 
 #main_index{
 	.hero-unit{
-		margin-top: 4px;
+		padding: 45px;
+	}
+	
+	.span9{
+		margin-left: 0;
 	}
 }
 
-#tentang, #donation, #feedback{
+#tentang, #donation, #feedback, #moderator{
 	margin-top: 40px;
 }

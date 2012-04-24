@@ -30,6 +30,45 @@ See the _base.scss for more
 	}
 }
 
+#sidebar_promo{
+	margin-top: 30px;
+	width: 240px;	
+	
+	.promo_donation{
+		padding: 13px;
+		color: #fff;
+		background-color: #3A3939;
+		
+		h1{
+			text-transform: uppercase;
+			font-size: 30px;
+			letter-spacing: -1px;
+			text-rendering: optimizelegibility;
+		}
+		
+		a.btn{
+			margin-top: 10px;
+		}
+	}
+	
+	.promo_contribute{
+		padding: 13px;
+		background-color: #ECECEC;
+		color:#3A3939;
+		
+		h1{
+			text-transform: uppercase;
+			font-size: 26px;
+			letter-spacing: -1px;
+			text-rendering: optimizelegibility;
+		}
+		
+		a.btn{
+			margin-top: 10px;
+		}
+	}
+}
+
 #footer{
 	padding-bottom: 30px;
 }
