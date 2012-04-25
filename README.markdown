@@ -9,9 +9,11 @@ Harapan saya anda munggunakan source code ini untuk penyampaian video-video usta
 
 1. Video uploads are done separately and in the moderato's page. You can choose your own provider; Amazon S3 or Rackspace Cloudfiles. 
 
-2. Once you've selected a cloud storage do not forget to change the video source address for the location of the videos. See app/views/show.html.erb
+2. Once you've selected a cloud storage do not forget to change the video source address for the location of the videos. See app/views/lectures/show.html.erb
 
 3. You can use the same cloud storage to store the poster and thumbnails for the videos. Set your own keys for the cloud storage at: config/initializers/carrierwave.rb 
+
+4. You need to get a key for the Sublime video. You can obtain one at [Sublime Player's site](http://sublimevideo.net). Change it at app/views/layouts/application.html.erb
 
 ## Setup
 
