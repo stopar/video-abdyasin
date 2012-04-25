@@ -1,6 +1,6 @@
 # Pengenalan
 
-Assalamualaikum semua, berikut adalah source code untuk laman http://video.abdyasin.com. Sesiapa sahaja boleh fork code ini dan mengubahnya dan kemudian gunakannya untuk tujuan peribadi anda. 
+Assalamualaikum semua, berikut adalah source code untuk laman [video Dr. Abdullah Yasin](http://video.abdyasin.com). Sesiapa sahaja boleh fork code ini dan mengubahnya dan kemudian gunakannya untuk tujuan peribadi anda. 
 
 Harapan saya anda munggunakan source code ini untuk penyampaian video-video ustaz/ustazah anda sendiri. Saya juga berminat untuk mendengar ceramah-ceramah ustaz lain dan saya pasti terdapat banyak lagi yang ada di dunia ini, sebarkanlah kerana segala amalan baik anda akan lakukan akan dibalas oleh Allah di akhirat kelak
 
