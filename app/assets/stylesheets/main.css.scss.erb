@@ -4,7 +4,17 @@
 
 #main_index{
 	.hero-unit{
+		background-image: url('index.jpg');
+		background-repeat: repeat-y;
+		background-color: #409038;
+		color: #fff;
 		padding: 45px;
+		h1{
+			@include text-shadow(#4B4B4B 3px 3px 5px, #9A9A9A -2px -1px 1px);
+		}
+		p{
+			@include text-shadow(#444444 2px 2px 4px);
+		}
 	}
 	
 	.span9{
