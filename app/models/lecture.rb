@@ -13,7 +13,6 @@ class Lecture < ActiveRecord::Base
     permalink
   end
   
-  
   private
   
   # Takes the title and stores a permalink to it
