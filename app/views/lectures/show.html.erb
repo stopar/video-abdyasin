@@ -1,9 +1,9 @@
 <div id="lecture">
 	
 	<div id="lecture_main" class="span9">
-		<%= video_tag [	"http://s3-ap-southeast-1.amazonaws.com/ustazvideos/#{@lecture.video_name}.mp4",
-						"http://s3-ap-southeast-1.amazonaws.com/ustazvideos/#{@lecture.video_name}.ogv",
-		                "http://s3-ap-southeast-1.amazonaws.com/ustazvideos/#{@lecture.video_name}.webm"
+		<%= video_tag [	"http://[Video host location]/#{@lecture.video_name}.mp4",
+						"http://[Video host location]/#{@lecture.video_name}.ogv",
+		                "http://[Video host location]/#{@lecture.video_name}.webm"
 		                 ], 
 		            :class => "sublime", 
 		            :width => 640, :height => 360,
