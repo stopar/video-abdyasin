@@ -1,9 +1,9 @@
 CarrierWave.configure do |config|
   config.fog_credentials = {
     :provider             => 'Rackspace',
-    :rackspace_username   => 'crashhog',
-    :rackspace_api_key    => 'f9bb7f75305b3bb6797d35d491131fe7'    
+    :rackspace_username   => '[Username]',
+    :rackspace_api_key    => '[API key]'    
   }
-  config.fog_directory    = 'ustaz_assets'
-  config.fog_host         = "http://c328429.r29.cf1.rackcdn.com"
+  config.fog_directory    = '[Cloud directory]'
+  config.fog_host         = "[Your host]"
 end
