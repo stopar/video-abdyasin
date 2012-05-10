@@ -19,10 +19,20 @@
 		</div>	
 	
 		<div class="clearfix"></div>
+		
+		<div class="fb-like" data-href="http://video.abdyasin.com" data-send="true" data-width="700" data-show-faces="false" data-font="verdana"></div>
 		<div class="note">	
 			<h1 class="title"><%= @lecture.title %></h1>
 
-			<p>Ceramah dirakam pada <%= @lecture.recorded_at.strftime('%d hb %b %Y') %></p>
+			<p>Ceramah dirakam pada <%= @lecture.recorded_at.strftime('%d hb %b %Y') %> dan 
+			
+			<% if @lecture.minutes > 60  %>
+				tempoh ceramah adalah <%= @lecture.minutes.to_i/60 %> jam 
+				<%= @lecture.minutes.to_i - 60 %> minit
+			<% else  %>
+				tempoh ceramah adalah <%= @lecture.minutes.to_i %> minit
+			<% end %>
+			</p>
 			<br/>
 		
 			<div id="markdown_text">
