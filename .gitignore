@@ -22,3 +22,6 @@
 
 # Ignore junk!
 /.DS_Store
+
+# Secret files to ignore
+/config/initializers/carrierwave.rb
