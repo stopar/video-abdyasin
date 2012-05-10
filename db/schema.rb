@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120415112125) do
+ActiveRecord::Schema.define(:version => 20120510030413) do
 
   create_table "lectures", :force => true do |t|
     t.string   "title"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20120415112125) do
     t.boolean  "free",        :default => true
     t.string   "permalink"
     t.string   "poster"
+    t.integer  "minutes",     :default => 0
   end
 
   create_table "moderators", :force => true do |t|

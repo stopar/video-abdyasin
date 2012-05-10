@@ -33,6 +33,11 @@
 			/*@include box-shadow(#545454 3px 3px 5px 3px);		*/
 		}
 		
+		.fb-like{
+			margin-top: 10px;
+			padding-left: 20px;
+		}
+		
 		h1.title{
 			line-height: 5px;
 		}
@@ -44,14 +49,15 @@
 		}
 		
 		.tip{
-			margin-top: 20px;		
+			margin-top: 20px;
+			margin-bottom: 5px;		
 		}
 		
 		.note{
-			margin-top: 30px;
 			background-color: #fafafa;
 			padding: 15px;		
 		}
+		
 	}
 	
 	#sidebar_promo{

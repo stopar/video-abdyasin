@@ -19,3 +19,6 @@
 
 # Ignoring cache uploads by CarrierWave
 /public/uploads
+
+# Ignore junk!
+/.DS_Store

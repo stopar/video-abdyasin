@@ -11,7 +11,7 @@
 		<%= l.input :recorded_at,   :label => 'Dirakamkan pada', 
 		 							:start_year => Date.today.year - 3, :end_year => Date.today.year, 
 		 							:order => [:day, :month, :year] %>
-		
+		<%= l.input :minutes, :label => 'Tempoh (minit)' %>
 		<%= l.input :poster, :label => 'Poster ceramah', :as => :file %>
 	
 		<%= l.input :note, :class => 'note', :input_html => {:rows => '25'} %>
