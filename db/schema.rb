@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(:version => 20120510030413) do
     t.boolean  "free",        :default => true
     t.string   "permalink"
     t.string   "poster"
-    t.integer  "minutes"
+    t.integer  "minutes",     :default => 0
   end
 
   create_table "moderators", :force => true do |t|
