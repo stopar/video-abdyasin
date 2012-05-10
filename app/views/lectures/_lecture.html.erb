@@ -2,7 +2,10 @@
 	<%= link_to image_tag(lecture.poster_url(:thumb)), lecture_path(lecture), 
 	 			:class => "thumbnail" %>
 	<h4><%= lecture.title %></h4>
-	<p><%= lecture.recorded_at.strftime('%d hb %b %Y') %></p>
+	<p>Selama: <%= lecture.minutes.to_i/60 %> jam <%= lecture.minutes.to_i - 60 %> minit
+		<br />
+		Dirakam pada: <%= lecture.recorded_at.strftime('%d hb %b %Y') %>  
+	</p>
 	
 	<% if current_moderator %>
 		<div class="btn-group">

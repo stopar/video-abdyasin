@@ -1,8 +1,9 @@
 class Lecture < ActiveRecord::Base
   validates :title, :presence => true, :uniqueness => true
   validates :video_name, :presence => true, :uniqueness => true
+  validates :minutes, :numericality => { :only_integer => true }
   
-  attr_accessible :title, :video_name, :recorded_at, :note, :poster
+  attr_accessible :title, :video_name, :recorded_at, :note, :poster, :minutes
   
   mount_uploader :poster, PosterUploader  # Using Carrierwave to mount the uploader  
   
